@@ -1,14 +1,15 @@
 # CarND-PID-Control-Project
 In this project we implemented a PID controller in C++ to maneuver the vehicle around the track in a simulator.
 The simulator provided the cross track error (CTE) and the velocity (mph) in order to compute the appropriate steering angle with the help of the PID controller.
-He had to build a PID controller and tune the PID hyperparameters by testing the solution on the simulator.
+He had to build a PID controller and tune the PID hyperparameters by testing the solution in the simulator.
 
 # Reflection
 ## Effect of the P, I, D components
-The P,I,D components of the implemented controller behaved as mentioned in the lession:
+The P,I,D components of the implemented controller behaved as mentioned in the lesson:
 * Having only a P component, the car oversteers and is oscillating around the target trajectory.
 * Adding a D component mitigates oversteering and oscillating
-* Finally, adding an I component counteracts a systematic drift of the car and lets the car drive closer to the target trajectory.
+* Finally, adding an I component counteracts against a systematic drift of the car and lets the car drive closer to the target trajectory.
+
 The values of the P,I,D components must be selected carefully, because choosing a parameter value to high will lead to catastrophic behavior of the car, like loosing control and driving off the road.
 
 ## Selection of final hyperparameters
